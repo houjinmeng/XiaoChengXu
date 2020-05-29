@@ -1,0 +1,68 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"miniprogramRoot": "dist/wx/",
+	"compileType": "miniprogram",
+	"appid": "wx80c976b37c201610",
+	"projectname": "yougou61",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": 0,
+					"name": "cart",
+					"pathName": "pages/cart/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "detail",
+					"pathName": "pages/detail/main",
+					"query": "goods_id=47869",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "auth",
+					"pathName": "pages/auth/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order-d",
+					"pathName": "pages/order_detail/main",
+					"scene": null
+				}
+			]
+		}
+	}
+}

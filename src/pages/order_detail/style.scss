@@ -1,0 +1,117 @@
+.box {
+    // padding-bottom: 110rpx;
+    border-bottom: 54rpx solid #f4f4f4;
+    margin-bottom: 110rpx;
+}
+.message {
+    .m-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 40rpx 20rpx 20rpx 20rpx;
+        .phone {
+            position: relative;
+            padding-right: 40rpx;
+        }
+    }
+    .m-button {
+        padding: 20rpx;
+    }
+    image {
+        width: 100%;
+        height: 15rpx;
+    }
+}
+.setUser {
+    padding: 40rpx 20rpx 20rpx 20rpx;
+    position: relative;
+    &::after {
+        position: absolute;
+        top: 55rpx;
+        right: 20rpx;
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #999;
+        border-right: 1px solid #999;
+        transform: rotate(45deg);
+    }
+}
+.imgBottom {
+    width: 100%;
+    height: 15rpx;
+}
+.title {
+    border-top: 20rpx solid #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    height: 87rpx;
+    line-height: 87rpx;
+    padding: 30rpx;
+    .iconfont {
+        font-size: 20px;
+        margin-right: 10rpx;
+    }
+}
+.goods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20rpx;
+    .left {
+        width: 88rpx;
+        flex-shrink: 0;
+        text-align: center;
+    }
+    .right {
+        flex: 1;
+        display: flex;
+        padding-bottom: 20rpx;
+        border-bottom: 1px solid #ccc;
+        .goods_img {
+            image {
+                width: 160rpx;
+                height: 160rpx;
+            }
+        }
+        .goods_msg {
+            width: 100%;
+            padding-right: 20rpx;
+            box-sizing: border-box;
+            margin-left: 20rpx;
+            h4 {
+                overflow:hidden; 
+                text-overflow:ellipsis;
+                display:-webkit-box; 
+                -webkit-box-orient:vertical;
+                -webkit-line-clamp:2
+            }
+            .price {
+                display: flex;
+                margin-top: 50rpx;
+                justify-content: space-between;
+                .price_detail {
+                    color: red;
+                }
+                .price_num {
+                    .num {
+                        padding: 0 30rpx;
+                    }
+                    .sub, .add {
+                        display: inline-block;
+                        width: 50rpx;
+                        height: 50rpx;
+                        border: 1px solid #666;
+                        text-align: center;
+                        line-height: 50rpx;
+                    }
+                }
+            }
+        }
+    }
+}
+.total {
+    color: red;
+    text-align: right;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}

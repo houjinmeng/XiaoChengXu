@@ -1,0 +1,73 @@
+.content {
+    display: flex;
+    position: absolute;
+    top: 100rpx;
+    bottom: 0rpx;
+    left: 0rpx;
+    .left {
+        height: 100%;
+        overflow: auto;
+        width: 198rpx;
+       // 用来指定 flex 布局的子元素大小不进行自动分配
+       flex-shrink: 0;
+       .menu {
+           height: 100rpx;
+           line-height: 100rpx;
+           text-align: center;
+           background-color: #f4f4f4;
+           font-size: 16px;
+       }
+       .active {
+           background: #fff;
+           color: #eb4450;
+           position: relative;
+           &::before {
+             content: "";
+             width: 8rpx;
+             height: 60rpx;
+             background-color: #eb4450;
+             position: absolute;
+             top: 20rpx;
+             left: 0px;
+           }
+       }
+    }
+    .right {
+        height: 100%;
+        overflow: auto;
+        padding: 20rpx 16rpx;
+        box-sizing: border-box;
+        .topImg {
+            width: 520rpx;
+            height: 180rpx;
+        }
+        .goods {
+            .title {
+                margin: 40rpx 0;
+                text-align: center;
+                span {
+                    color: #dadada;
+                }
+            }
+            .goods_items {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                .item {
+                    width: 33.33%;
+                    padding: 0 20rpx;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    image {
+                        width: 100%;
+                        height: 65rpx;
+                    }
+                    p {
+                        text-align: center;
+                        margin: 5px 0 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
